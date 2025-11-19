@@ -42,7 +42,7 @@ def Total ():
     try:
         num1 = float(entrada_ar.get())
         num2 = float(entrada_pr.get())
-        Total= (num1*num1)+(num1*num2*0.16)
+        Total= (num1*num2)+(num1*num2*0.16)
         resultado.config(text=f"TOTAL = : {Total}$")
     except ValueError:
         resultado.config(text="Introduce un caracter valido")
